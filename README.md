@@ -1,1 +1,1 @@
-https://dianaproger.github.io/first-site/
+https://dianaproger.github.io/first-site/html

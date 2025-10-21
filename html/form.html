@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 40px 0;
+        }
+
+        header .logo {
+            text-transform: uppercase;
+            font-size: 29px;
+            font-weight: 800;
+        }
+
+        header nav {
+            float: right;
+            width: 50%;
+        }
+
+        header nav ul {
+            list-style: none;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+            position: relative;
+        }
+
+        header nav ul li {
+            display: inline-block;
+        }
+
+        header nav ul li a {
+            padding: 7px 10px;
+            color: black;
+        }
+
+        header nav ul li:not(.active) a:hover {
+            border-bottom: 4px solid #15678d;
+        }
+
+        header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #15678d;
+    position: relative;
+    top: 6px;
+    left: 10px
+}
+
+        p {
+            padding: 7px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">Кибершоп</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Домой</a></li>
+                    <li><a href="index.html#info">О нас</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="https://ria.ru/common_kibersport/" target="_blank">Новости</a></li>
+                    <li class="active"><a href="form.html" target="_blank">Напиши нам!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <input type="hidden" name="q" value="search">
+            <p>Введите личные данные</p>
+            <input type="hidden" name="form" value="personal information">
+            <p>Фамилия и имя: <input type="Text" name="last_name" size="20" value="Шевелева Диана"></p>
+            <p>Электронная почта: <input type="Text" name="e-mail" size="20" value="diana.she@gmail.com"></p>
+            <p>Возраст: <input type="Number" name="age" size="20" value="20"></p>
+            <p>Что интересует:
+                <input type="Radio" name="interest" value="pc" checked="">Игровые компьютеры
+                <input type="Radio" name="interest" value="laptop">Ноутбуки
+                <input type="Radio" name="interest" value="accessories">Периферия (мыши, клавиатуры, наушники)
+            </p>
+            <p>Любимые бренды:
+                <input type="Checkbox" name="favBrand" value="ASUS" checked="">ASUS
+                <input type="checkbox" name="favBrand" value="MSI"> MSI
+                <input type="checkbox" name="favBrand" value="Logitech"> Logitech
+                <input type="checkbox" name="favBrand" value="Dell" checked=""> Dell
+                <input type="checkbox" name="favBrand" value="Razer"> Razer
+            </p>
+
+             <p> Для чего вы чаще всего используете компьютер?
+        <select name="reason">
+            <option value="programming">Программирую</option>
+            <option value="films">Смотрю фильмы </option>
+            <option value="games">Играю</option>
+        </select>
+    </p>
+
+    <p> Пароль: <input type="password" name="password" size="10" value="123"></p>
+
+            <p> Дополнительная информация:
+                <br>
+                <textarea cols="80" rows="4" name="textarea">Здесь вы можете написать свой комментарий</textarea>
+            </p>
+
+            <p>Дата отправки сообщения: <input type="date" name="user_date" value="2025-10-22"></p>
+            
+            <p>
+                <input type="Reset" name="reset" value="Обновить">
+                <input type="Submit" name="submit" value="Отправить">
+            </p>
+        </form>
+</body>
+
+</html>

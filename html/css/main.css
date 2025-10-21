@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    padding: 7px 10px;
+    color: black;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 4px solid #15678d;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #15678d;
+    position: relative;
+    top: 6px;
+    left: 10px
+}
+
+header nav ul li.btn a {
+    background-color: #8fbcd1;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+
+strong {
+font-size: 30px;
+  color: #15678d;
+}
+
+ol {
+    list-style: decimal; 
+  padding-left: 40px;  
+    font-size: 25px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.catalog h1 {
+    font-size: 40px;
+    color: #15678d;
+    padding: 50px 25px;
+}
+
+.product-block {
+  display: inline-block;
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-block img {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.hero {
+    padding-bottom: 200px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 50px;
+    
+}
+
+.hero--info h1 {
+    font-size: 40px;
+    color: #15678d
+}
+
+.hero--info h3 {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.hero--info .btn {
+    cursor: pointer;
+    background-color: #15678d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.hero img {
+    width: 40%;
+    position: absolute;
+    top: 50px;
+    
+    right: 0;
+}
+
+table td {
+  font-size: 19px; 
+}

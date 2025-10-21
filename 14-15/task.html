@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Решение алгоритмической задачи</title>
+</head>
+
+<body>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <input type="hidden" name="q" value="search">
+        <h1 name="formulation"> Известна денежная сумма. Нужно разменять её купюрами 500, 100, 10 и монетой 2 руб., если это возможно.</h1>
+        <p>Введите сумму в рублях (целое число).</p>
+
+
+        <label for="amount">Сумма (рублей):</label>
+        <input id="amount" type="number" name="amount" min="0" value="">
+        <button id="calc" type="button">Разменять</button>
+        <p id="out"></p>
+        <input id="result" type="hidden" name="result" min="0" value="">
+
+        <input id="send" type="submit" value="Отправить на сервер"></input>
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>
